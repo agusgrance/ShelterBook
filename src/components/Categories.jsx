@@ -5,22 +5,22 @@ export default function Categories() {
     <div className="categories">
       <ul>
         <li>
-          <i class="fas fa-tree"></i>
+          <i className="fas fa-tree"></i>
         </li>
         <li>
-          <i class="fas fa-heart-broken"></i>
+          <i className="fas fa-heart-broken"></i>
         </li>
         <li>
-          <i class="fas fa-gamepad"></i>
+          <i className="fas fa-gamepad"></i>
         </li>
         <li>
-          <i class="fas fa-cloud"></i>
+          <i className="fas fa-cloud"></i>
         </li>
         <li>
-          <i class="fas fa-hat-wizard"></i>
+          <i className="fas fa-hat-wizard"></i>
         </li>
         <li>
-          <i class="fas fa-headphones"></i>
+          <i className="fas fa-headphones"></i>
         </li>
       </ul>
     </div>
