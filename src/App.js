@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
+import Card from './components/Card';
+import Slider from './components/Slider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <Slider img1="./img1.jpg" img2="./img2.jpg" img3="./img3.jpg" />
+      <Card user="Agustin Grance" title="Titulo..." text="Texto enviado desde una prop"/>
+      <Card user="user 1" title="Titulo..." text="Texto enviado desde una prop"/>
+      <Card user="user 2" title="Titulo..." text="Texto enviado desde una prop"/>
     </div>
   );
 }
