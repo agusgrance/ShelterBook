@@ -12,34 +12,41 @@ code {
     monospace;
 }
 nav {
+  
   background-color: rgba(164, 84, 255, 0.89);
-  text-align: center;
+  text-align: right;
   color: white;
   font-size: 18px;
   padding: 12px;
 }
+
 ul li:hover{
   opacity: 0.8;
 }
 .icon {
   float: left;
-  margin-top: -5px;
+  margin-top: 5px;
   font-size: 25px;
   font-weight: 800;
   font-family: monospace;
-  border: 1px solid white;
-  padding: 0px 12px;
-  border-radius: 25%;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 50%;
 }
-nav ul li {
+
+nav ul li{
+  
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 30px;
 }
+
+
 nav ul {
   margin: 0 auto;
 }
 .categories{
   margin: 50px 0;
+  margin-left: 15px;
   text-align: left;
 }
 .categories ul li{ 
@@ -47,6 +54,7 @@ nav ul {
   width: 100px;
   height: 100px;
   font-size: 45px;
+  
   margin-right: 65px;
   display: inline-block;
   color: white;
@@ -55,12 +63,18 @@ nav ul {
   padding: 15px;
   box-shadow: 0 0 20px 0px #00000057;
 }
-
+.welcome{
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-left: 50px;
+}
 .card {
   width: 50%;
   background: #f9f8f8;
   padding: 12px;
-  margin: 25px;
+  margin: 50px;
   box-shadow: 3px 3px 14px 1px grey;
   border-radius: 4px;
 }
@@ -69,3 +83,40 @@ nav ul {
   height: 450px;
 }
 
+.search{
+  float: left;
+  width: 450px;
+  margin-top: 18px;
+  margin-left: 2%;
+}
+.user-icon{
+  margin:0;
+  width: 75px;
+}
+
+.user-icon img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.sidebar{
+  float: right;
+  margin-right: 50px;
+  width: 30%;
+  
+}
+.bloque{
+  padding: 25px;
+  background-color: white;
+  box-shadow: 3px 3px 14px 1px grey;
+  border-radius: 4px;
+  margin-bottom: 35px;
+}
+
+.user{
+  margin: 30px 0;
+  display: flex;
+}
+.user-info{
+  margin: 10px 25px;
+}

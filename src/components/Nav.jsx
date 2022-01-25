@@ -1,13 +1,19 @@
 import React from 'react';
 
 
-export default function Nav(){
-   return(
+export default function Nav(props){
+ const {user} = props;
+    return(
     <nav>
-        <ul>
-            <li className='icon'>
+        <div className='icon'>
                 ShelterBook
+        </div>
+        <input className='search' type="search" placeholder='Buscar...' />
+        <ul>
+            <li>
+                
             </li>
+            
             <li>
                 Home
             </li>
@@ -19,6 +25,9 @@ export default function Nav(){
             </li>
             <li>
                 Contact
+            </li>
+            <li className='user-icon'>
+                <img src={user} alt="user"/>
             </li>
         </ul>
     </nav>
