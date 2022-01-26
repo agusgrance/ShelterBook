@@ -31,7 +31,7 @@ function App() {
       <Sidebar user={user} />
       <Categories />
 
-      {user_data.filter((val)=>{
+      {user_data.slice(0,15).filter((val)=>{
         if(search == ""){
           return val;
         }
@@ -41,7 +41,7 @@ function App() {
       }).map((val, key) => {
         return (
           <div key={key}>
-            <Card user={val.first_name} title="Titulo..." text={val.bio}/>
+            <Card user={val.first_name} username={val.username} title="Titulo..." text={val.bio} icon={val.avatar}/>
           </div>
         );
       })}
