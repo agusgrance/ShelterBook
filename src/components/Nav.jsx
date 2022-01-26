@@ -1,14 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 
 export default function Nav(props){
  const {user} = props;
+ 
+ 
     return(
     <nav>
         <div className='icon'>
                 ShelterBook
         </div>
-        <input className='search' type="search" placeholder='Buscar...' />
+        <input className='search' type="search" placeholder='Buscar...' onChange={(e)=>{props.callback(e.target.value)}} />
         <ul>
             <li>
                 
