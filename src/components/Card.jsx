@@ -1,11 +1,16 @@
 import React from 'react';
 
 export default function Card(props){
-    const {user,title,text} = props;
+    const {user,title,text,icon, username} = props;
     return(
         <div className='card'>
             <div className='user'>
-                <h6>{user}</h6>
+            <img src={icon} alt="" />
+            <div className='userdata'>
+            <h6>{user}</h6>
+            <p>@{username}</p>
+            </div>
+            
             </div>
             <div className='content'>
             <h3>

@@ -1,4 +1,5 @@
 import React from "react";
+import user_data from "../user_data.json";
 
 export default function Sidebar(props) {
   const { user } = props;
@@ -17,33 +18,21 @@ export default function Sidebar(props) {
       <div className="bloque">
         <h5>A quien seguir</h5>
         <ul className="users">
-          <li className="user">
+          {user_data.slice(0,3).map((val,key)=>{
+            return(
+              <li className="user" key={key}>
             <div className="user-icon">
-              <img src={user.avatar_url} alt="" />
+              <img src={val.avatar} alt="" />
             </div>
             <div className="user-info">
-              <h5>{user.name}</h5>
-              <p>@{user.login}</p>
+              <h5>{val.first_name}</h5>
+              <p>@{val.username}</p>
             </div>
           </li>
-          <li className="user">
-            <div className="user-icon">
-              <img src={user.avatar_url} alt="" />
-            </div>
-            <div className="user-info">
-              <h5>{user.name}</h5>
-              <p>@{user.login}</p>
-            </div>
-          </li>
-          <li className="user">
-            <div className="user-icon">
-              <img src={user.avatar_url} alt="" />
-            </div>
-            <div className="user-info">
-              <h5>{user.name}</h5>
-              <p>@{user.login}</p>
-            </div>
-          </li>
+            )
+          })}
+          
+          
         </ul>
       </div>
     </div>
